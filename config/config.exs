@@ -26,3 +26,5 @@ config :sc_web, ScWeb.Endpoint,
 #       format: "$date $time [$level] $metadata$message\n",
 #       metadata: [:user_id]
 #
+
+config :phoenix, :json_library, Jason
