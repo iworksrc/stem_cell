@@ -45,7 +45,8 @@ defmodule ScWeb.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:ecto_sql, "~> 3.0", override: true},
-      {:postgrex, "~> 0.14.1"}
+      {:postgrex, "~> 0.14.1"},
+      {:sc_models, in_umbrella: true}  #todo is important part
     ]
   end
 

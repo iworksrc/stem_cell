@@ -2,7 +2,22 @@
   <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
   <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
 </section>
-
+<section>
+    <h2><%= gettext "%{ass}", ass: @ass %></h2>
+</section>
+<section>
+    <ul>
+    <%= for item <- @items do %>
+        <li>
+            <strong>
+                <%= item.title %>
+            </strong>
+            : <%= item.description %>
+        </li>
+    <% end %>
+    </ul>
+</section>
+<!--
 <section class="row">
   <article class="column">
     <h2>Resources</h2>
@@ -33,3 +48,4 @@
     </ul>
   </article>
 </section>
+-->
