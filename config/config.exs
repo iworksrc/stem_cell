@@ -22,6 +22,17 @@ config :sc_web, ScWeb.Endpoint,
   render_errors: [view: ScWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: ScWeb.PubSub, adapter: Phoenix.PubSub.PG2]
 
+config :sc_web, ecto_repos: [SC_Web.Repo]
+
+config :sc_web, SC_Web.Repo,
+  database: "stem_cell_dev",
+  username: "itorum",
+  password: "itorumpassword",
+  hostname: "localhost",
+  port: "25432"
+
+
+
 # Sample configuration:
 #
 #     config :logger, :console,
