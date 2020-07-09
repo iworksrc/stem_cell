@@ -26,10 +26,10 @@ config :sc_web, ecto_repos: [SC_Web.Repo]
 
 config :sc_web, SC_Web.Repo,
   database: "stem_cell_dev",
-  username: "itorum",
-  password: "itorumpassword",
+  username: "postgres",
+  password: "12345",
   hostname: "localhost",
-  port: "25432"
+  port: "5432"
 
 
 

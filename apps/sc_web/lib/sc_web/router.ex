@@ -20,7 +20,9 @@ defmodule ScWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ScWeb do
-  #   pipe_through :api
-  # end
+   scope "/api", ScWeb do
+     pipe_through :api
+
+     resources "/posts", ItemController, only: [:index, :show]
+   end
 end
