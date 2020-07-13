@@ -2,6 +2,7 @@ defmodule ScModels.Item do
   @moduledoc """
   Structure for represent item entity
   """
+  @derive Jason.Encoder
   defstruct [:id, :title, :description, :ends_at]
 #  defstruct id: 0,
 #            title: "default title",
